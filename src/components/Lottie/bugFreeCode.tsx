@@ -1,16 +1,24 @@
-"use client"; // Add this at the top to make the component a Client Component
+"use client";
 
+import { useEffect, useState } from "react";
 import { useLottie } from "lottie-react";
-import CloudAnimation from "public/Lottie/freeCodes.json"; // Assuming your path is correct
 
 export default function BugFreeCode() {
+  const [animationData, setAnimationData] = useState<any>(null);
+
+  useEffect(() => {
+    import("public/Lottie/freeCodes.json").then((mod) => {
+      setAnimationData(mod.default || mod);
+    });
+  }, []);
+
   const options = {
-    animationData: CloudAnimation,
-    loop: true, // Set this to false if you don't want it to loop
+    animationData: animationData,
+    loop: true,
     style: { width: "100%", height: "100%" },
   };
 
   const { View } = useLottie(options);
 
-  return <div>{View}</div>;
+  return <div>{animationData ? View : null}</div>;
 }
