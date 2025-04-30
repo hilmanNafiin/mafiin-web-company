@@ -1,5 +1,8 @@
 import Image from "next/image";
-import BugFreeCode from "../Lottie/bugFreeCode";
+import dynamic from "next/dynamic";
+
+const BugFreeCode = dynamic(() => import("../Lottie/bugFreeCode"), { ssr: false });
+
 
 const AboutSectionTwo = () => {
   return (
