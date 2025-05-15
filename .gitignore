@@ -6,8 +6,7 @@
 .pnp.js
 .vscode
 # testing
-/coverage
-
+/cover
 # next.js
 # /.next/
 # /out/

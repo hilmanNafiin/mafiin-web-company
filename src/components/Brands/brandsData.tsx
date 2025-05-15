@@ -4,7 +4,7 @@ const brandsData: Brand[] = [
   {
     id: 6,
     name: "Khakenfood",
-    href: "https://khakenfood.my.id/",
+    href: "https://www.instagram.com/khakenfood.cirebon?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     image: "/images/brands/khakenFood.png",
     imageLight: "/images/brands/khakenFood.png",
   },
