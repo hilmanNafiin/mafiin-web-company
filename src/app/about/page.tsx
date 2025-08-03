@@ -14,7 +14,7 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Page"
+        pageName="About"
         description="Mafiin Cloud Konsultan untuk mendukung bisnis anda dalam menciptakan website impian anda. Tim kami siap membantu anda dalam membuat website impian anda."
       />
       <AboutSectionOne />

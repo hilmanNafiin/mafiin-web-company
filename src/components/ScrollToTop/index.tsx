@@ -26,7 +26,7 @@ export default function ScrollToTop() {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
   const redirectToWhatsApp = () => {
-    const phoneNumber = "6289657770131";
+    const phoneNumber = "6285718935040";
 
     const message = "Halo, saya ingin menghubungi Anda";
 
