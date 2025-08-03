@@ -10,10 +10,10 @@ const brandsData: Brand[] = [
   },
   // {
   //   id: 1,
-  //   name: "UIdeck",
+  //   name: "ybh",
   //   href: "https://uideck.com",
-  //   image: "/images/brands/uideck.svg",
-  //   imageLight: "/images/brands/uideck-light.svg",
+  //   image: "https://www.yellowboat-id.org/images/ypk.png",
+  //   imageLight: "https://www.yellowboat-id.org/images/ypk.png",
   // },
   // {
   //   id: 2,

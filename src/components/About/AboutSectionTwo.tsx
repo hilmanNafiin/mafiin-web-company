@@ -1,8 +1,9 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-const BugFreeCode = dynamic(() => import("../Lottie/bugFreeCode"), { ssr: false });
-
+const BugFreeCode = dynamic(() => import("../Lottie/bugFreeCode"), {
+  ssr: false,
+});
 
 const AboutSectionTwo = () => {
   return (
@@ -21,16 +22,16 @@ const AboutSectionTwo = () => {
             <div className="max-w-[470px]">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Gratis Perbaikan
+                  Free Repair
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Kami menghargai setiap feedback yang Anda berikan terkait
-                  performa aplikasi kami. Jika Anda mengalami kendala atau
-                  menemukan bug pada aplikasi, kami ingin menginformasikan bahwa
-                  tim teknis kami siap segera melakukan perbaikan. Proses ini
-                  akan dilakukan tanpa biaya tambahan. Kami berkomitmen untuk
-                  memastikan aplikasi Anda berjalan optimal, sehingga Anda dapat
-                  terus menggunakan layanan kami dengan lancar.
+                  We appreciate any feedback you provide regarding the
+                  performance of our app. If you encounter any issues or find
+                  any bugs in the app, we want to let you know that our
+                  technical team is ready to immediately fix them. This process
+                  will be done at no additional cost. We are committed to
+                  ensuring your app runs optimally, so you can continue to use
+                  our services smoothly.
                 </p>
               </div>
               {/* <div className="mb-9">
