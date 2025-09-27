@@ -8,6 +8,13 @@ const brandsData: Brand[] = [
     image: "/images/brands/khakenFood.png",
     imageLight: "/images/brands/khakenFood.png",
   },
+  {
+    id: 6,
+    name: "TONG",
+    href: "https://tong.id",
+    image: "/images/brands/TONG.png",
+    imageLight: "/images/brands/TONG.png",
+  },
   // {
   //   id: 1,
   //   name: "ybh",

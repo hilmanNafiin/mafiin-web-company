@@ -24,10 +24,10 @@ const Hero = () => {
                   <div className="m-auto text-center md:ml-6 md:text-left">
                     <p className="text-3xl font-bold">Mafiin Cloud</p>
                     <p className="p-2 text-justify text-gray-500">
-                      <span className="font-bold">Mafiin Cloud</span> adalah
-                      konsultan IT yang menyediakan solusi teknologi inovatif
-                      untuk mendukung pencapaian bisnis, dengan layanan
-                      berkualitas sesuai kebutuhan klien.
+                      <span className="font-bold">Mafiin Cloud</span> is an IT
+                      consultant that provides innovative technology solutions
+                      to support business achievements, with quality services
+                      tailored to client needs.
                     </p>
                   </div>
                 </div>
