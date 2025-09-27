@@ -25,7 +25,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Technological Stack"
-                paragraph="Mafiin Cloud Mempunyai standar stack tertentu mungkin lebih cocok untuk proyek atau tugas tertentu."
+                paragraph="Mafiin Cloud Having a certain standard stack may be more suitable for certain projects or tasks."
                 mb="44px"
               />
 
@@ -40,7 +40,6 @@ const AboutSectionOne = () => {
                     <List text="Docker" />
                     <List text="Cpanel" />
                     <List text="Portainer" />
-                    <List text="Socket.io" />
                     <List text="Terraform" />
                   </div>
 
