@@ -29,5 +29,19 @@ const blogData: Blog[] = [
     tags: ["Undangan Digital"],
     publishDate: "September 2024",
   },
+  {
+    id: 3,
+    title: "Kelola Semua Mudah",
+    paragraph:
+      "Satu sistem terpadu untuk operasional bisnis Anda. Manajemen penjualan, gudang, keuangan, pengiriman...",
+    image: "/images/blog/ksmDashboard.png",
+    author: {
+      name: "Mafiin Cloud",
+      image: "/images/logo/MB.png",
+      designation: "Support: Full Stack",
+    },
+    tags: ["KSM (ERP)"],
+    publishDate: "September 2024",
+  },
 ];
 export default blogData;

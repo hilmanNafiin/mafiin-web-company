@@ -49,7 +49,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
                 <h4 className="mb-1 text-sm font-medium text-dark dark:text-white">
                   By {author.name}
                 </h4>
-                <p className="text-xs text-body-color">{author.designation}</p>
+                {/* <p className="text-xs text-body-color">{author.designation}</p> */}
               </div>
             </div>
             <div className="inline-block">
