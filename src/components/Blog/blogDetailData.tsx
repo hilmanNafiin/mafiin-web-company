@@ -46,5 +46,28 @@ const blogDetailData: BlogDetail[] = [
     ],
     end: "Siap untuk merayakan momen spesial Anda dengan undangan digital yang elegan dan praktis? Hubungi kami untuk konsultasi dan informasi lebih lanjut tentang layanan undangan digital berbasis website kami. Tim kami siap membantu Anda mewujudkan undangan impian Anda!",
   },
+  {
+    id_blog: 3,
+    header: "Kelola Semua Mudah",
+    header_paragraph:
+      "Kelola Semua Mudah (KSM) adalah aplikasi berbasis website yang dirancang untuk membantu perusahaan distributorship dalam mencatat, mengelola, dan memantau operasional bisnis secara terpusat, efisien, dan real-time. Solusi ini memudahkan pengelolaan stok, transaksi, gudang, hingga laporan keuangan dalam satu sistem terintegrasi.",
+    image: "/images/blog/ksmDashboard.png",
+    link: "https://kelolasemuamudah.com",
+    fitur: "Fitur Utama Kelola Semua Mudah",
+    point: [
+      "Manajemen Produk & Kategori: Kelola data produk secara terstruktur, termasuk kategori, satuan, harga beli, dan harga jual.",
+      "Manajemen Gudang : Mendukung Distribution Stok Keluar Masuk.",
+      "Kontrol Stok & Inventory: Pencatatan stok masuk, stok keluar, mutasi antar gudang, serta riwayat pergerakan barang.",
+      "Transaksi Pembelian (Purchase): Kelola purchase order, penerimaan barang, serta pencatatan hutang ke supplier.",
+      "Transaksi Penjualan (Sales): Pencatatan penjualan tunai dan Transfer, invoice, serta penagihan Klien.",
+      "Manajemen Supplier & Customer: Database supplier dan pelanggan lengkap dengan riwayat transaksi.",
+      "Manajemen Pengguna & Hak Akses: Multi role user (Admin, Gudang, Finance, Purchasing,Sales dan Driver) dengan pengaturan akses sesuai kebutuhan.",
+      "Laporan & Dashboard: Laporan stok, penjualan, pembelian, dan ringkasan bisnis dalam bentuk dashboard yang mudah dipahami.",
+      "Notifikasi & Reminder: Pemberitahuan stok menipis, Return, Refund, Pengriman Customer, Uang (Keluar,Masuk), Collection.",
+      "Sistem Berbasis Cloud: Akses data kapan saja dan di mana saja melalui berbagai perangkat.",
+      "Keamanan Data: Sistem keamanan dengan autentikasi pengguna, kontrol akses, dan backup data berkala.",
+    ],
+    end: "Dengan Kelola Semua Mudah, pengelolaan operasional bisnis distributorship menjadi lebih rapi, transparan, dan efisien. Hubungi kami untuk mendapatkan solusi pencatatan operasional yang sesuai dengan kebutuhan bisnis Anda.",
+  },
 ];
 export default blogDetailData;

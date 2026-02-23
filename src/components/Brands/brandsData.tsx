@@ -15,6 +15,13 @@ const brandsData: Brand[] = [
     image: "/images/brands/TONG.png",
     imageLight: "/images/brands/TONG.png",
   },
+  {
+    id: 7,
+    name: "EggCellent",
+    href: "https://www.instagram.com/eggcellentfarm_",
+    image: "/images/brands/egg.png",
+    imageLight: "/images/brands/egg.png",
+  },
   // {
   //   id: 1,
   //   name: "ybh",
