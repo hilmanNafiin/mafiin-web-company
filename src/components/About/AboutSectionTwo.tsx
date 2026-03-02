@@ -1,6 +1,4 @@
-import Image from "next/image";
 import dynamic from "next/dynamic";
-
 const BugFreeCode = dynamic(() => import("../Lottie/bugFreeCode"), {
   ssr: false,
 });
@@ -34,24 +32,6 @@ const AboutSectionTwo = () => {
                   our services smoothly.
                 </p>
               </div>
-              {/* <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
-              </div>
-              <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Next.js
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
-                </p>
-              </div> */}
             </div>
           </div>
         </div>
