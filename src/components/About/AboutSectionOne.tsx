@@ -35,21 +35,23 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Node JS ,Express" />
-                    <List text="React Js, Next.js" />
+                    <List text="Node JS" />
+                    <List text="React" />
                     <List text="Docker" />
                     <List text="Cpanel" />
                     <List text="Portainer" />
+                    <List text="Rancher" />
                     <List text="Terraform" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="PHP ,Laravel" />
+                    <List text="PHP" />
                     <List text="PostgreSQL" />
                     <List text="MongoDB" />
-                    <List text="Mysql" />
+                    <List text="Oracle" />
                     <List text="Redis" />
-                    <List text="Golang, Gin" />
+                    <List text="Golang" />
+                    <List text="Python" />
                   </div>
                 </div>
               </div>

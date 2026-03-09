@@ -16,7 +16,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About Us"
-        description="Mafiin Cloud Consultants is here to support your business in creating professional, high quality software. Our team is ready to help you create a website that meets your business needs."
+        description="Mafiin Cloud Consultants is here to support your business in creating professional, high quality software. Our team is ready to help you create a Application that meets your business needs."
       />
       <AboutSectionOne />
       <AboutSectionTwo />
