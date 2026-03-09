@@ -22,7 +22,7 @@ const menuData: Menu[] = [
   {
     id: 3,
     title: "Support",
-    path: "/contact",
+    path: "https://api.whatsapp.com/send/?phone=6285718935040&text=Halo,+saya+ingin+menghubungi+Anda&type=phone_number&app_absent=0",
     newTab: false,
   },
   // {

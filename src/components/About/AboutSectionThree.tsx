@@ -16,15 +16,16 @@ const AboutSectionThree = () => {
 
           <div className="flex flex-col items-center gap-8 md:flex-row md:gap-12">
             {/* Founder Info - Proporsional */}
-            <div className="flex-1 text-center md:text-left">
+            <div className="">
               <h4 className="mb-2 text-2xl font-bold text-black dark:text-white md:text-3xl">
-                Hilman Nafi'in
+                {`Hilman Nafi'in`}
               </h4>
               <p className="mb-4 text-lg font-medium text-primary">
                 Founder & Lead Developer
               </p>
               <p className="text-base leading-relaxed text-body-color dark:text-body-color-dark md:text-lg">
-                With over a decade of professional experience, Hilman Nafi'in
+                With over a decade of professional experience,{" "}
+                {`Hilman Nafi'in`}
                 established this company with a clear vision to deliver
                 innovative and dependable digital solutions. He is committed to
                 maintaining high standards of quality, integrity, and service
@@ -35,7 +36,7 @@ const AboutSectionThree = () => {
               </p>
 
               {/* Social Links - Optional */}
-              <div className="mt-6 flex justify-center gap-4 md:justify-start">
+              {/* <div className="mt-6 flex justify-center gap-4 md:justify-start">
                 <a
                   href="https://www.linkedin.com/in/hilmannafiin/"
                   className="rounded-full bg-primary/10 p-3 text-primary transition-colors hover:bg-primary hover:text-white"
@@ -63,10 +64,10 @@ const AboutSectionThree = () => {
                     <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.01 4 20 5.99 20 7.75v8.5c0 1.76-1.99 3.75-3.75 3.75h-8.5C5.99 20 4 18.01 4 16.25v-8.5C4 5.99 5.99 4 7.75 4zm4.25 3.25a4.75 4.75 0 100 9.5 4.75 4.75 0 000-9.5zm0 2a2.75 2.75 0 110 5.5 2.75 2.75 0 010-5.5zm4.75-.88a1.12 1.12 0 100 2.24 1.12 1.12 0 000-2.24z" />
                   </svg>
                 </a>
-              </div>
+              </div> */}
             </div>
             {/* Founder Image - Proporsional */}
-            {/* <div className="relative h-64 w-64 flex-shrink-0 overflow-hidden rounded-full border-4 border-primary/20 shadow-xl md:h-80 md:w-80">
+            <div className="relative h-64 w-64 flex-shrink-0 overflow-hidden rounded-full border-4 border-primary/20 shadow-xl md:h-80 md:w-80">
               <Image
                 src="/images/about/hilman.png"
                 alt="Hilman Nafi'in - Founder"
@@ -75,7 +76,7 @@ const AboutSectionThree = () => {
                 sizes="(max-width: 768px) 256px, 320px"
                 priority
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
