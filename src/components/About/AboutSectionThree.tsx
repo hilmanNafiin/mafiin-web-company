@@ -1,83 +1,92 @@
 import Image from "next/image";
-import dynamic from "next/dynamic";
-const BugFreeCode = dynamic(() => import("../Lottie/bugFreeCode"), {
-  ssr: false,
-});
 
 const AboutSectionThree = () => {
+  const teamMembers = [
+    {
+      name: "Hilman Nafi'in",
+      role: "Founder & CEO",
+      image: "/images/about/hilman.png",
+    },
+    {
+      name: "Hannan Azka Tuminem",
+      role: "Sales & Marketing",
+      image: "/images/about/hanan.png",
+    },
+    {
+      name: "Danendra",
+      role: "Software Engineer",
+      image: "/images/about/danen.png",
+    },
+    {
+      name: "Boni Steven",
+      role: "AI Engineer",
+      image: "/images/about/boni.png",
+    },
+    {
+      name: "Laudza",
+      role: "Web3 Engineer",
+      image: "/images/about/laudza.jpeg",
+    },
+  ];
+
   return (
-    <section className="py-16 md:py-20 lg:py-28">
-      <div className="container">
-        {/* Founder Section */}
-        <div className="mt-12 border-t border-gray-200 pt-8 dark:border-gray-700">
-          <h3 className="mb-8 text-3xl font-bold text-black dark:text-white md:text-4xl">
-            Meet Our Founder
-          </h3>
+    <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white py-16 dark:from-gray-900 dark:to-gray-800 md:py-20 lg:py-28">
+      {/* Background Decorative Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -left-48 -top-48 h-96 w-96 rounded-full bg-primary/5 blur-3xl"></div>
+        <div className="bg-secondary/5 absolute -bottom-48 -right-48 h-96 w-96 rounded-full blur-3xl"></div>
+      </div>
 
-          <div className="flex flex-col items-center gap-8 md:flex-row md:gap-12">
-            {/* Founder Info - Proporsional */}
-            <div className="">
-              <h4 className="mb-2 text-2xl font-bold text-black dark:text-white md:text-3xl">
-                {`Hilman Nafi'in`}
-              </h4>
-              <p className="mb-4 text-lg font-medium text-primary">
-                Founder & Lead Developer
-              </p>
-              <p className="text-base leading-relaxed text-body-color dark:text-body-color-dark md:text-lg">
-                With over a decade of professional experience,{" "}
-                {`Hilman Nafi'in`}
-                established this company with a clear vision to deliver
-                innovative and dependable digital solutions. He is committed to
-                maintaining high standards of quality, integrity, and service
-                excellence. Guided by a strong dedication to thoughtful
-                craftsmanship and meaningful user experiences, he continues to
-                lead the company in providing solutions that prioritize client
-                satisfaction and long-term value.
-              </p>
+      <div className="container relative z-10">
+        {/* Section Header */}
+        <div className="mx-auto mb-12 max-w-3xl text-center md:mb-16">
+          <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-primary dark:bg-primary/20">
+            Our Leadership
+          </span>
+          <h2 className="mb-4 text-3xl font-bold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
+            Meet the Minds Behind
+            <span className="bg-clip-text text-primary"> Our Success</span>
+          </h2>
+          <p className="text-base text-gray-600 dark:text-gray-300 md:text-lg">
+            Tim yang berdedikasi dengan pengalaman luas di berbagai bidang
+            teknologi
+          </p>
+        </div>
 
-              {/* Social Links - Optional */}
-              {/* <div className="mt-6 flex justify-center gap-4 md:justify-start">
-                <a
-                  href="https://www.linkedin.com/in/hilmannafiin/"
-                  className="rounded-full bg-primary/10 p-3 text-primary transition-colors hover:bg-primary hover:text-white"
-                  aria-label="LinkedIn"
-                >
-                  <svg
-                    className="h-5 w-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                  </svg>
-                </a>
+        {/* Team Grid */}
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className="group relative overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-300 hover:shadow-2xl dark:bg-gray-800"
+            >
+              {/* Image Container */}
+              <div className="to-secondary/10 relative overflow-hidden bg-gradient-to-br from-primary/10 pb-8 pt-8">
+                <div className="relative mx-auto h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-xl transition-all duration-300 group-hover:scale-105 dark:border-gray-700 md:h-56 md:w-56">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 192px, 224px"
+                  />
+                </div>
+              </div>
 
-                <a
-                  href="https://www.instagram.com/nafiinn_"
-                  className="rounded-full bg-primary/10 p-3 text-primary transition-colors hover:bg-primary hover:text-white"
-                  aria-label="instagram"
-                >
-                  <svg
-                    className="h-5 w-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.01 4 20 5.99 20 7.75v8.5c0 1.76-1.99 3.75-3.75 3.75h-8.5C5.99 20 4 18.01 4 16.25v-8.5C4 5.99 5.99 4 7.75 4zm4.25 3.25a4.75 4.75 0 100 9.5 4.75 4.75 0 000-9.5zm0 2a2.75 2.75 0 110 5.5 2.75 2.75 0 010-5.5zm4.75-.88a1.12 1.12 0 100 2.24 1.12 1.12 0 000-2.24z" />
-                  </svg>
-                </a>
-              </div> */}
+              {/* Content */}
+              <div className="p-6 text-center">
+                <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white md:text-2xl">
+                  {member.name}
+                </h3>
+                <p className="text-sm font-semibold text-primary md:text-base">
+                  {member.role}
+                </p>
+              </div>
+
+              {/* Decorative Border */}
+              <div className="to-secondary absolute bottom-0 left-0 h-1 w-full scale-x-0 transform bg-gradient-to-r from-primary transition-transform duration-300 group-hover:scale-x-100"></div>
             </div>
-            {/* Founder Image - Proporsional */}
-            <div className="relative h-64 w-64 flex-shrink-0 overflow-hidden rounded-full border-4 border-primary/20 shadow-xl md:h-80 md:w-80">
-              <Image
-                src="/images/about/hilman.png"
-                alt="Hilman Nafi'in - Founder"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 256px, 320px"
-                priority
-              />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
