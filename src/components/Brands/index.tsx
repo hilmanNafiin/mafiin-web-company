@@ -4,18 +4,50 @@ import brandsData from "./brandsData";
 
 const Brands = () => {
   return (
-    <section className="pt-16">
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4">
-            <div className="m-auto p-3 text-center">
-              <h3>Clients :</h3>
+    <section className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 py-20 dark:from-gray-900 dark:to-gray-800 md:py-28 lg:py-32">
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div
+          className="absolute left-0 top-0 h-full w-full"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 2px 2px, currentColor 1px, transparent 1px)",
+            backgroundSize: "40px 40px",
+          }}
+        ></div>
+      </div>
+
+      <div className="container relative z-10">
+        <div className="mx-auto max-w-7xl">
+          {/* Elegant minimal header */}
+          <div className="mb-16 text-center">
+            <div className="mb-6 inline-flex items-center justify-center rounded-full bg-primary/10 px-4 py-1">
+              <span className="text-xs font-semibold uppercase tracking-wider text-primary">
+                Our Clients
+              </span>
             </div>
-            <div className="flex flex-wrap items-center justify-center rounded-sm bg-gray-light px-8 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">
-              {brandsData.map((brand) => (
-                <SingleBrand key={brand.id} brand={brand} />
-              ))}
+            <h2 className="text-2xl font-light text-gray-800 dark:text-gray-100 md:text-3xl lg:text-4xl">
+              Dipercaya oleh{" "}
+              <span className="font-semibold text-primary">
+                Perusahaan Terkemuka
+              </span>
+            </h2>
+            <div className="mx-auto mt-4 h-px w-12 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+          </div>
+
+          {/* Elegant brands showcase */}
+          <div className="relative">
+            {/* Glass effect container */}
+            <div className="rounded-3xl bg-white/40 shadow-sm backdrop-blur-[2px] dark:bg-gray-800/40">
+              <div className="grid grid-cols-2 gap-8 p-8 sm:gap-10 md:grid-cols-3 md:p-12 lg:grid-cols-4 xl:grid-cols-5">
+                {brandsData.map((brand) => (
+                  <SingleBrand key={brand.id} brand={brand} />
+                ))}
+              </div>
             </div>
+
+            {/* Elegant border gradient */}
+            <div className="via-secondary/20 pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-r from-primary/20 to-primary/20"></div>
           </div>
         </div>
       </div>
@@ -29,26 +61,31 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
   const { href, image, imageLight, name } = brand;
 
   return (
-    <div className="flex w-1/2 items-center justify-center px-3 py-[15px] sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6">
+    <div className="group flex items-center justify-center">
       <a
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className="relative h-64 w-full transition"
+        className="relative h-20 w-full transition-all duration-500 ease-out hover:scale-105 md:h-24 lg:h-28"
       >
+        <div
+          className="absolute inset-0 rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          style={{
+            background:
+              "radial-gradient(circle at center, rgba(99, 102, 241, 0.1) 0%, transparent 70%)",
+          }}
+        ></div>
         <Image
           src={imageLight}
           alt={name}
           fill
-          className="hidden dark:block"
-          style={{ objectFit: "contain" }}
+          className="hidden object-contain opacity-60 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 dark:block"
         />
         <Image
           src={image}
           alt={name}
           fill
-          className="block dark:hidden"
-          style={{ objectFit: "contain" }}
+          className="block object-contain opacity-60 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 dark:hidden"
         />
       </a>
     </div>

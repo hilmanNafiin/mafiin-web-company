@@ -2,6 +2,7 @@ import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionThree from "@/components/About/AboutSectionThree";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Partners from "@/components/Partners";
 
 import { Metadata } from "next";
 
@@ -16,11 +17,24 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About Us"
-        description="Mafiin Cloud Consultants is here to support your business in creating professional, high quality software. Our team is ready to help you create a Application that meets your business needs."
+        description="MafiinCloud adalah perusahaan IT konsultan yang
+menyediakan solusi digital terintegrasi untuk membantu
+bisnis berkembang di era teknologi modern. Kami
+berfokus pada pengembangan sistem yang efisien,
+scalable, dan sesuai dengan kebutuhan operasional
+perusahaan.
+
+
+Dengan menggabungkan teknologi terbaru dan
+pendekatan berbasis kebutuhan klien, MafiinCloud hadir
+sebagai partner strategis dalam transformasi digital mulai
+dari perencanaan, pengembangan, hingga implementasi
+sistem."
       />
       <AboutSectionOne />
       <AboutSectionTwo />
       <AboutSectionThree />
+      <Partners />
     </>
   );
 };

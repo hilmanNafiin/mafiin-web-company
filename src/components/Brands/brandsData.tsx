@@ -22,41 +22,20 @@ const brandsData: Brand[] = [
     image: "/images/brands/egg.png",
     imageLight: "/images/brands/egg.png",
   },
-  // {
-  //   id: 1,
-  //   name: "ybh",
-  //   href: "https://uideck.com",
-  //   image: "https://www.yellowboat-id.org/images/ypk.png",
-  //   imageLight: "https://www.yellowboat-id.org/images/ypk.png",
-  // },
-  // {
-  //   id: 2,
-  //   name: "Tailgrids",
-  //   href: "https://tailgrids.com",
-  //   image: "/images/brands/tailgrids.svg",
-  //   imageLight: "/images/brands/tailgrids-light.svg",
-  // },
-  // {
-  //   id: 3,
-  //   name: "Lineicons",
-  //   href: "https://lineicons.com",
-  //   image: "/images/brands/lineicons.svg",
-  //   imageLight: "/images/brands/lineicons-light.svg",
-  // },
-  // {
-  //   id: 4,
-  //   name: "Tailadmin",
-  //   href: "https://tailadmin.com",
-  //   image: "/images/brands/tailadmin.svg",
-  //   imageLight: "/images/brands/tailadmin-light.svg",
-  // },
-  // {
-  //   id: 5,
-  //   name: "PlainAdmin",
-  //   href: "https://plainadmin.com",
-  //   image: "/images/brands/plainadmin.svg",
-  //   imageLight: "/images/brands/plainadmin-light.svg",
-  // },
+  {
+    id: 8,
+    name: "Changer",
+    href: "https://changerstore.mafiincloud.com",
+    image: "/images/brands/changerstore.png",
+    imageLight: "/images/brands/changerstore.png",
+  },
+  {
+    id: 9,
+    name: "Yellow Boat",
+    href: "https://yellowboat-id.org",
+    image: "/images/brands/yellowboat.png",
+    imageLight: "/images/brands/yellowboat.png",
+  },
 ];
 
 export default brandsData;
