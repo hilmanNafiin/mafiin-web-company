@@ -8,6 +8,11 @@ const AboutSectionThree = () => {
       image: "/images/about/hilman.png",
     },
     {
+      name: "M. Indra Kusuma",
+      role: "Co-founder & Project Manager",
+      image: "/images/about/indra.png",
+    },
+    {
       name: "Hannan Azka Tuminem",
       role: "Sales & Marketing",
       image: "/images/about/hanan.png",
