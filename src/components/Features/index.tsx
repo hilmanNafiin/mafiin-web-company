@@ -12,12 +12,14 @@ const Features = () => {
             paragraph="Menjamin standar kualitas tinggi untuk kepuasan pelanggan."
             center
           />
-          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2" style={{ justifyContent: 'center' }}>
-            {featuresData.map((feature) => (
-              <SingleFeature key={feature.id} feature={feature} />
+          <div
+            className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2"
+            style={{ justifyContent: "center" }}
+          >
+            {featuresData.map((feature, index) => (
+              <SingleFeature key={feature.id} feature={feature} index={index} />
             ))}
           </div>
-
         </div>
       </section>
     </>

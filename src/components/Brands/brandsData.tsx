@@ -36,6 +36,13 @@ const brandsData: Brand[] = [
     image: "/images/brands/yellowboat.png",
     imageLight: "/images/brands/yellowboat.png",
   },
+  {
+    id: 10,
+    name: "Kasta Beaute",
+    href: "https://kastabeaute.com",
+    image: "/images/brands/kastabeaute.png",
+    imageLight: "/images/brands/kastabeaute.png",
+  },
 ];
 
 export default brandsData;
