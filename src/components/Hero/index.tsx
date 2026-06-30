@@ -27,7 +27,7 @@ const Hero = () => {
                       <span className="font-bold">Mafiin Cloud</span> adalah
                       layanan teknologi yang dikembangkan oleh{" "}
                       <span className="font-bold">
-                        PT Mafiin Solusi Indonesia
+                        PT Mafiin Solusi Indonesia{" "}
                       </span>
                       untuk membantu organisasi, perusahaan, dan instansi dalam
                       menghadapi tantangan transformasi digital. Kami percaya

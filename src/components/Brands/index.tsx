@@ -1,8 +1,12 @@
+"use client";
 import { Brand } from "@/types/brand";
 import Image from "next/image";
 import brandsData from "./brandsData";
 
 const Brands = () => {
+  // Duplikat data untuk efek infinite scroll
+  const duplicatedBrands = [...brandsData, ...brandsData, ...brandsData];
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 py-20 dark:from-gray-900 dark:to-gray-800 md:py-28 lg:py-32">
       {/* Subtle background pattern */}
@@ -35,14 +39,17 @@ const Brands = () => {
             <div className="mx-auto mt-4 h-px w-12 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
           </div>
 
-          {/* Elegant brands showcase */}
+          {/* Animated brands showcase - 1 baris */}
           <div className="relative">
             {/* Glass effect container */}
-            <div className="rounded-3xl bg-white/40 shadow-sm backdrop-blur-[2px] dark:bg-gray-800/40">
-              <div className="grid grid-cols-2 gap-8 p-8 sm:gap-10 md:grid-cols-3 md:p-12 lg:grid-cols-4 xl:grid-cols-5">
-                {brandsData.map((brand) => (
-                  <SingleBrand key={brand.id} brand={brand} />
-                ))}
+            <div className="overflow-hidden rounded-3xl bg-white/40 shadow-sm backdrop-blur-[2px] dark:bg-gray-800/40">
+              <div className="relative flex overflow-hidden py-6 md:py-8 lg:py-10">
+                {/* Animasi ke kiri */}
+                <div className="animate-marquee-left flex whitespace-nowrap">
+                  {duplicatedBrands.map((brand, index) => (
+                    <SingleBrand key={`${brand.id}-${index}`} brand={brand} />
+                  ))}
+                </div>
               </div>
             </div>
 
@@ -51,6 +58,38 @@ const Brands = () => {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes marquee-left {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .animate-marquee-left {
+          animation: marquee-left 25s linear infinite;
+        }
+
+        .animate-marquee-left:hover {
+          animation-play-state: paused;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+          .animate-marquee-left {
+            animation-duration: 18s;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .animate-marquee-left {
+            animation-duration: 12s;
+          }
+        }
+      `}</style>
     </section>
   );
 };
@@ -61,12 +100,12 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
   const { href, image, imageLight, name } = brand;
 
   return (
-    <div className="group flex items-center justify-center">
+    <div className="group mx-4 flex items-center justify-center sm:mx-6 md:mx-8">
       <a
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className="relative h-20 w-full transition-all duration-500 ease-out hover:scale-105 md:h-24 lg:h-28"
+        className="relative h-16 w-28 transition-all duration-500 ease-out hover:scale-110 sm:h-20 sm:w-32 md:h-24 md:w-40 lg:h-28 lg:w-48"
       >
         <div
           className="absolute inset-0 rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -79,13 +118,13 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
           src={imageLight}
           alt={name}
           fill
-          className="hidden object-contain opacity-60 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 dark:block"
+          className="hidden object-contain opacity-70 transition-all duration-300 group-hover:opacity-100 dark:block"
         />
         <Image
           src={image}
           alt={name}
           fill
-          className="block object-contain opacity-60 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 dark:hidden"
+          className="block object-contain opacity-70 transition-all duration-300 group-hover:opacity-100 dark:hidden"
         />
       </a>
     </div>
