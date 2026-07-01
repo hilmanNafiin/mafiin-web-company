@@ -1,4 +1,4 @@
-import Link from "next/link";
+"use client";
 import Cloud from "../Lottie/cloud";
 import Clouds from "../Lottie/cloudsWhite";
 
@@ -24,10 +24,16 @@ const Hero = () => {
                   <div className="m-auto text-center md:ml-6 md:text-left">
                     <p className="text-3xl font-bold">Mafiin Cloud</p>
                     <p className="p-2 text-justify text-gray-500">
-                      <span className="font-bold">Mafiin Cloud</span> is an IT
-                      consultant that provides innovative technology solutions
-                      to support business achievements, with quality services
-                      tailored to client needs.
+                      <span className="font-bold">Mafiin Cloud</span> adalah
+                      layanan teknologi yang dikembangkan oleh{" "}
+                      <span className="font-bold">
+                        PT Mafiin Solusi Indonesia{" "}
+                      </span>
+                      untuk membantu organisasi, perusahaan, dan instansi dalam
+                      menghadapi tantangan transformasi digital. Kami percaya
+                      bahwa teknologi harus menjadi alat yang mempermudah proses
+                      bisnis, meningkatkan efisiensi operasional, dan
+                      menciptakan nilai tambah yang berkelanjutan.
                     </p>
                   </div>
                 </div>
