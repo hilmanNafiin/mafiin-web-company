@@ -36,26 +36,25 @@ export default function ScrollToTop() {
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-[99]">
-      <div className="flex flex-row">
-        <FaWhatsapp
-          color="green"
-          className="h-10 w-10"
-          onClick={redirectToWhatsApp}
-        />
-        <div className="mx-1" />
-        {isVisible && (
-          <>
-            <div
-              onClick={scrollToTop}
-              aria-label="scroll to top"
-              className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
-            >
-              <span className="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
-            </div>
-          </>
-        )}
-      </div>
+    <div className="fixed bottom-[96px] right-6 z-[99] flex flex-col items-center gap-3">
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          aria-label="scroll to top"
+          className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+        >
+          <span className="mt-[4px] h-2.5 w-2.5 rotate-45 border-l-2 border-t-2 border-white"></span>
+        </button>
+      )}
+
+      <button
+        onClick={redirectToWhatsApp}
+        aria-label="Chat via WhatsApp"
+        title="Hubungi kami via WhatsApp"
+        className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl active:scale-95"
+      >
+        <FaWhatsapp className="h-7 w-7 text-white" />
+      </button>
     </div>
   );
 }
