@@ -3,6 +3,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
+import TawkTo from "@/components/TawkTo";
 import { Inter } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
@@ -29,6 +30,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <ScrollToTop />
+          <TawkTo />
         </Providers>
       </body>
     </html>
